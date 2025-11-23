@@ -423,7 +423,7 @@ open class MessageInputBar: UIView {
     /// - Parameter window: The window to anchor to
     private func setupConstraints(to window: UIWindow?) {
         if #available(iOS 11.0, *) {
-            guard UIScreen.main.nativeBounds.height == 2436 else { return }
+            // guard UIScreen.main.nativeBounds.height == 2436 else { return }
             if let window = window {
                 windowAnchor?.isActive = false
                 windowAnchor = contentView.bottomAnchor.constraint(lessThanOrEqualToSystemSpacingBelow: window.safeAreaLayoutGuide.bottomAnchor, multiplier: 1)
